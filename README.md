@@ -17,10 +17,9 @@ runsims1.sh: weight distributions on 3 different random walk models (Figure 6 in
 runsims2.sh: SE-model comparison on 4 different random walk models (Figure 7b in manuscript)<br/>
 runsims3.sh: SE-model comparison on 4 different random walk models (Figure 7a in manuscript)<br/>
 
-The Python files generate the random walks.<br/>
+The Python files generate the random walks (note: each iteration overwrites the same .csv file).<br/>
 The C++ files run the contact and infection transmission process on top of the generated random walks.<br/>
-
-The results (stored output from the C++ files) are analysed/visualised in the Jupyter notebook:<br/>
+In the Jupyter notebook the results (stored output from the C++ files) are analysed/visualised:<br/>
 RW-simulation-output.ipynb
 
 To compile the C++ programs, run the commands:<br/>
