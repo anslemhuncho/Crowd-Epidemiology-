@@ -12,7 +12,7 @@ g++ version 4.2.1 Apple clang version 12.0.5 (clang-1205.0.22.9)
 
 ## Random walk simulations
 
-Code organised as 3 sets of simulations, executed by the three Bash files:<br/>
+Code organised in 3 sets of simulations, executed by the three Bash files:<br/>
 runsims1.sh: weight distributions on 3 different random walk models (Figure 6 in manuscript)<br/>
 runsims2.sh: SE-model comparison on 4 different random walk models (Figure 7b in manuscript)<br/>
 runsims3.sh: SE-model comparison on 4 different random walk models (Figure 7a in manuscript)<br/>
@@ -28,5 +28,5 @@ g++ -o getw getWeights.cpp<br/>
 g++ -o getcp2 getContactprocess_v2.cpp<br/>
 g++ -o getcp3 getContactprocess_v3.cpp<br/>
 
-To. give permission to Bash files, run:<br/>
+To give permission to Bash files, run:<br/>
 chmod 755 runsims1.sh
