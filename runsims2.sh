@@ -1,5 +1,4 @@
-# Run simulations with periodic/fixed boundary conditions
-# SE model
+# Run SE model simulations
 filenumbers=($(seq 0 1 29))
 for i in "${filenumbers[@]}"
 do
@@ -21,6 +20,8 @@ do
         ./getcp2 $i
         echo " "
 done
+
+echo "Now starting next set of simulations.\n"
 
 filenumbers=($(seq 60 1 89))
 for i in "${filenumbers[@]}"
