@@ -18,8 +18,8 @@ runsims2.sh: SE-model comparison on 4 different random walk models (Figure 7b in
 runsims3.sh: SE-model comparison on 4 different random walk models (Figure 7a in manuscript)<br/>
 
 The Python files generate the random walks (note: each iteration overwrites the same .csv file).<br/>
-The C++ files run the contact and infection transmission process on top of the generated random walks.<br/>
-In the Jupyter notebook the results (stored output from the C++ files) are analysed/visualised:<br/>
+The C++ files run the contact and infection transmission process on the newly generated .csv file containing the random walks.<br/>
+In the Jupyter notebook all the results (stored output from the C++ files) are analysed and plotted:<br/>
 RW-simulation-output.ipynb
 
 To compile the C++ programs, run the commands:<br/>
@@ -27,5 +27,5 @@ g++ -o getw getWeights.cpp<br/>
 g++ -o getcp2 getContactprocess_v2.cpp<br/>
 g++ -o getcp3 getContactprocess_v3.cpp<br/>
 
-To give permission to Bash files, run:<br/>
+To give permission to Bash files, for each file run:<br/>
 chmod 755 runsims1.sh
