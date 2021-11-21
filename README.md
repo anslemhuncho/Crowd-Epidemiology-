@@ -4,9 +4,9 @@ Software for "Analysing the dynamic relationship between crowd behaviour and spr
 
 Philip Rutten, Michael H. Lees, Sander Klous, Hans Heesterbeek, Peter M.A. Sloot
 
-Code created on: Apple macOS Big Sur Version 11.6
-Python version 3.8.8
-Packages: pandas, numpy, powerlaw, matplotlib
+Code created on: Apple macOS Big Sur Version 11.6<br/>
+Python version 3.8.8<br/>
+Packages: pandas, numpy, powerlaw, matplotlib<br/>
 g++ version 4.2.1 Apple clang version 12.0.5 (clang-1205.0.22.9)
 
 ## Random walk simulations
