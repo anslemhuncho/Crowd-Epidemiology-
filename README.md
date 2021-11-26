@@ -29,3 +29,39 @@ g++ -o getcp3 getContactprocess_v3.cpp<br/>
 
 To give permission to Bash files, for each file run:<br/>
 chmod 755 runsims1.sh
+
+## Movement track analysis
+
+In the Jupyter notebook movement-trajectories-visualisations.ipynb the example tracks are plotted, and the waiting times are measured (Figures 1, 2 in manuscript).
+
+## Aggregated contact networks
+
+In the C++ files getcontactEvents_v2.cpp and getcontactEvents_v2a.cpp the contact sequences are generated.
+The programs take as input the movement tracks stored in CSV files realtracks362ajax.csv and realtracks1048.csv.
+The C++ files can be compiled as follows:
+g++ -o getcev2 getcontactEvents_v2.cpp
+g++ -o getcev2a getcontactEvents_v2a.cpp
+
+After running the executable, i.e. the command:
+./getcev2
+the program stores the file “contactsequence1048.csv” in the same directory.
+
+The parameter sweeps over the distance threshold parameter are implemented in the Bash files:
+runsweep1.sh: iteratively runs C++ file getcontactEvents_v2_sweep.cpp on specified input parameter values.
+runsweep2.sh iteratively runs C++ file getcontactEvents_v2a_sweep.cpp on specified input parameter values.
+
+Make sure to compile the C++ programs with proper executable file names:
+g++ -o getcev2sweep getcontactEvents_v2_sweep.cpp
+g++ -o getcev2asweep getcontactEvents_v2a_sweep.cpp
+
+To give permission to the Bash files, run the commands:
+chmod 755 runsweep1.sh
+chmod 755 runsweep2.sh
+
+In the Jupyter notebook aggregated-network-analysis.ipynb the degree distributions are extracted from the contact sequences (stored in the C++ output files) (Figure 4 in manuscript).
+The contact duration and weight distributions (Figure 5 in manuscript) are extracted from the same contact sequences.
+
+## Transmission over the network
+
+In the Jupyter notebook network-transmission-analysis.ipynb all the contact rates and incidence cures are analysed (Figures 8, 9, 10, 11 in manuscript) from the generated contact sequences.  
+
