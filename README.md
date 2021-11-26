@@ -63,5 +63,5 @@ The contact duration and weight distributions (Figure 5 in manuscript) are extra
 
 ## Transmission over the network
 
-In the Jupyter notebook network-transmission-analysis.ipynb all the contact rates and incidence cures are analysed (Figures 8, 9, 10, 11 in manuscript) from the generated contact sequences.  
+In the Jupyter notebook network-transmission-analysis.ipynb all the contact rates and incidence curves are analysed (Figures 8, 9, 10, 11 in manuscript) from the generated contact sequences.  
 
