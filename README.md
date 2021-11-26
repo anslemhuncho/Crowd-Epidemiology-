@@ -36,7 +36,7 @@ In the Jupyter notebook movement-trajectories-visualisations.ipynb the example t
 
 ## Aggregated contact networks
 
-In the C++ files getcontactEvents_v2.cpp and getcontactEvents_v2a.cpp the contact sequences are generated.
+In the C++ files getcontactEvents_v2.cpp and getcontactEvents_v2a.cpp the contact sequences are generated.<br/>
 The programs take as input the movement tracks stored in CSV files realtracks362ajax.csv and realtracks1048.csv.<br/>
 The C++ files can be compiled as follows:<br/>
 g++ -o getcev2 getcontactEvents_v2.cpp<br/>
@@ -58,7 +58,7 @@ To give permission to the Bash files, run the commands:<br/>
 chmod 755 runsweep1.sh<br/>
 chmod 755 runsweep2.sh
 
-In the Jupyter notebook aggregated-network-analysis.ipynb the degree distributions are extracted from the contact sequences (stored in the C++ output files) (Figure 4 in manuscript).
+In the Jupyter notebook aggregated-network-analysis.ipynb the degree distributions are extracted from the contact sequences (stored in the C++ output files) (Figure 4 in manuscript).<br/>
 The contact duration and weight distributions (Figure 5 in manuscript) are extracted from the same contact sequences.
 
 ## Transmission over the network
