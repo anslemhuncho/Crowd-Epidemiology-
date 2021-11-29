@@ -8,7 +8,7 @@ Code created on: Apple macOS Big Sur Version 11.6<br/>
 Python version 3.8.8<br/>
 Jupyter Notebook 6.3.0<br/>
 Packages: pandas, numpy, powerlaw, matplotlib<br/>
-g++ version 4.2.1 Apple clang version 12.0.5 (clang-1205.0.22.9)
+g++ version 4.2.1 Apple clang version 12.0.5 (clang-1205.0.22.9)<br/>
 
 ## Random walk simulations
 
@@ -29,6 +29,8 @@ g++ -o getcp3 getContactprocess_v3.cpp<br/>
 
 To give permission to Bash files, for each file run:<br/>
 chmod 755 runsims1.sh
+
+All simulation times are less than one hour on a standard laptop.
 
 ## Movement track analysis
 
@@ -63,5 +65,6 @@ The contact duration and weight distributions (Figure 5 in manuscript) are extra
 
 ## Transmission over the network
 
-In the Jupyter notebook network-transmission-analysis.ipynb all the contact rates and incidence curves are analysed (Figures 8, 9, 10, 11 in manuscript) from the generated contact sequences.  
+In the Jupyter notebook network-transmission-analysis.ipynb all the contact rates and incidence curves are analysed (Figures 8, 9, 10, 11 in manuscript) from the generated contact sequences.<br/>
 
+Some of the analyses may take up to an hour on a standard laptop.
