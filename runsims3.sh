@@ -3,9 +3,9 @@ filenumbers=($(seq 120 1 149))
 for i in "${filenumbers[@]}"
 do
         echo Running the CRW process.
-        python CRWprocess.py
+        python Python/CRWprocess.py
         echo Running the contact and infection process.
-        ./getcp2 $i
+        Cpp/getcp2 $i
         echo " "
 done
 
@@ -15,9 +15,9 @@ filenumbers=($(seq 150 1 179))
 for i in "${filenumbers[@]}"
 do
         echo Running the regCTCRW process.
-        python regCTCRWprocess.py
+        python Python/regCTCRWprocess.py
         echo Running the contact and infection process.
-        ./getcp2 $i
+        Cpp/getcp2 $i
         echo " "
 done
 
@@ -27,9 +27,9 @@ filenumbers=($(seq 180 1 209))
 for i in "${filenumbers[@]}"
 do
         echo Running the CRW process.
-        python CRWprocess.py
+        python Python/CRWprocess.py
         echo Running the contact and infection process.
-        ./getcp3 $i
+        Cpp/getcp3 $i
         echo " "
 done
 
@@ -39,9 +39,9 @@ filenumbers=($(seq 210 1 239))
 for i in "${filenumbers[@]}"
 do
         echo Running the regCTCRW process.
-        python regCTCRWprocess.py
+        python Python/regCTCRWprocess.py
         echo Running the contact and infection process.
-        ./getcp3 $i
+        Cpp/getcp3 $i
         echo " "
 done
 
