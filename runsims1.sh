@@ -2,9 +2,9 @@ filenumbers=($(seq 0 1 9))
 for i in "${filenumbers[@]}"
 do
         echo Running the RW process.
-        python RWprocess.py
+        python Python/RWprocess.py
         echo Getting the weights.
-        ./getw $i
+        Cpp/getw $i
         echo " "
 done
 
@@ -12,9 +12,9 @@ filenumbers=($(seq 10 1 39))
 for i in "${filenumbers[@]}"
 do
         echo Running the RW process.
-        python CTRWprocess.py
+        python Python/CTRWprocess.py
         echo Getting the weights.
-        ./getw $i
+        Cpp/getw $i
         echo " "
 done
 
@@ -22,9 +22,9 @@ filenumbers=($(seq 40 1 69))
 for i in "${filenumbers[@]}"
 do
         echo Running the RW process.
-        python regCTRWprocess.py
+        python Python/regCTRWprocess.py
         echo Getting the weights.
-        ./getw $i
+        Cpp/getw $i
         echo " "
 done
 
