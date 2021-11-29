@@ -39,7 +39,7 @@ for i in range(len(tracks)):
     m.append(tracks[i][:,0])
     m.append(tracks[i][:,1])
 
-with open('simtracks1000.csv', 'w') as csvfile:
+with open('Cpp/simtracks1000.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     for row in m:
         writer.writerow(row)
