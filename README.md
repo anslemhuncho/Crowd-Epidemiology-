@@ -7,7 +7,7 @@ Philip Rutten, Michael H. Lees, Sander Klous, Hans Heesterbeek, Peter M.A. Sloot
 Code created on: Apple macOS Big Sur Version 11.6<br/>
 Python version 3.8.8<br/>
 Jupyter Notebook 6.3.0<br/>
-Packages: pandas, numpy, powerlaw, matplotlib<br/>
+Packages: pandas, numpy, powerlaw, networkx, matplotlib<br/>
 g++ version 4.2.1 Apple clang version 12.0.5 (clang-1205.0.22.9)<br/>
 
 ## Random walk simulations
