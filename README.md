@@ -12,7 +12,7 @@ g++ version 4.2.1 Apple clang version 12.0.5 (clang-1205.0.22.9)<br/>
 
 ## Random walk simulations
 
-Code organised in 3 sets of simulations, executed by the three Bash files:<br/>
+Code organised in 4 sets of simulations, executed by the three Bash files:<br/>
 runsims1.sh: weight distributions on 3 different random walk models (Figure 6 in manuscript)<br/>
 runsims2.sh: SE-model comparison on 4 different random walk models (Figure 7b in manuscript)<br/>
 runsims3.sh: SE-model comparison on 4 different random walk models (Figure 7a in manuscript)<br/>
