@@ -51,10 +51,10 @@ After running the executable, i.e. the command:<br/>
 ./getcev2<br/>
 the program stores the file “contactsequence1048.csv” in the same directory.<br/>
 
-The parameter sweeps over the distance threshold parameter (Figure 4 and 5) are implemented in the Bash files:<br/>
-runsweep1.sh: iteratively runs C++ file getcontactEvents_v2_sweep.cpp on specified input parameter values.<br/>
-runsweep2.sh iteratively runs C++ file getcontactEvents_v2a_sweep.cpp on specified input parameter values.<br\>
-runsweep3.sh iteratively runs C++ file getcontactEvents_v2_sweep.cpp on specified input parameter values.
+The parameter sweeps over the distance threshold parameter are implemented in the Bash files:<br/>
+runsweep1.sh: iteratively runs C++ file getcontactEvents_v2_sweep.cpp on specified input parameter values (Figure 4b in manuscript)<br/>
+runsweep2.sh iteratively runs C++ file getcontactEvents_v2a_sweep.cpp on specified input parameter values (Figure 4a in manuscript)<br/>
+runsweep3.sh iteratively runs C++ file getcontactEvents_v2_sweep.cpp on specified input parameter values (Figure 5a,b in manuscript).
 
 Make sure to compile the C++ programs with proper executable file names:<br/>
 g++ -o getcev2sweep getcontactEvents_v2_sweep.cpp<br/>
