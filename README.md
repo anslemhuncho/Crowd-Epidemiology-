@@ -51,19 +51,17 @@ After running the executable, i.e. the command:<br/>
 ./getcev2<br/>
 the program stores the file “contactsequence1048.csv” in the same directory.<br/>
 
-The parameter sweeps over the distance threshold parameter (Figure 4) are implemented in the Bash files:<br/>
+The parameter sweeps over the distance threshold parameter (Figure 4 and 5) are implemented in the Bash files:<br/>
 runsweep1.sh: iteratively runs C++ file getcontactEvents_v2_sweep.cpp on specified input parameter values.<br/>
 runsweep2.sh iteratively runs C++ file getcontactEvents_v2a_sweep.cpp on specified input parameter values.<br\>
-The parameter sweep over the distance threshold parameter (Figure 5) are implemented in the Bash file:<br/>
-runsweep3.sh iteratively runs C++ file getcontactEvents_v2a_sweep.cpp on specified input parameter values.
+runsweep3.sh iteratively runs C++ file getcontactEvents_v2_sweep.cpp on specified input parameter values.
 
 Make sure to compile the C++ programs with proper executable file names:<br/>
 g++ -o getcev2sweep getcontactEvents_v2_sweep.cpp<br/>
 g++ -o getcev2asweep getcontactEvents_v2a_sweep.cpp
 
-To give permission to the Bash files, run the commands:<br/>
+To give permission to the Bash files, for each file run:<br/>
 chmod 755 runsweep1.sh<br/>
-chmod 755 runsweep2.sh
 
 In the Jupyter notebook aggregated-network-analysis.ipynb the degree distributions are extracted from the contact sequences (stored in the C++ output files) (Figure 4 in manuscript).<br/>
 The contact duration and weight distributions (Figure 5 in manuscript) are extracted from the same contact sequences.
