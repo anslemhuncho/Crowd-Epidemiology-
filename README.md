@@ -16,6 +16,7 @@ Code organised in 3 sets of simulations, executed by the three Bash files:<br/>
 runsims1.sh: weight distributions on 3 different random walk models (Figure 6 in manuscript)<br/>
 runsims2.sh: SE-model comparison on 4 different random walk models (Figure 7b in manuscript)<br/>
 runsims3.sh: SE-model comparison on 4 different random walk models (Figure 7a in manuscript)<br/>
+runsims4.sh: SE-model comparison on 2 different random walk models, versus a range of transmissibility parameter (mu) values  (Figure 7c in manuscript)
 
 The Python files generate the random walks (note: each iteration overwrites the same .csv file).<br/>
 The C++ files run the contact and infection transmission process on the newly generated .csv file containing the random walks.<br/>
@@ -26,6 +27,7 @@ To compile the C++ programs, run the commands:<br/>
 g++ -o getw getWeights.cpp<br/>
 g++ -o getcp2 getContactprocess_v2.cpp<br/>
 g++ -o getcp3 getContactprocess_v3.cpp<br/>
+g++ -o getcp3sweep getContactprocess_v3_sweep.cpp
 
 To give permission to Bash files, for each file run:<br/>
 chmod 755 runsims1.sh
@@ -51,7 +53,8 @@ the program stores the file “contactsequence1048.csv” in the same directory.
 
 The parameter sweeps over the distance threshold parameter are implemented in the Bash files:<br/>
 runsweep1.sh: iteratively runs C++ file getcontactEvents_v2_sweep.cpp on specified input parameter values.<br/>
-runsweep2.sh iteratively runs C++ file getcontactEvents_v2a_sweep.cpp on specified input parameter values.
+runsweep2.sh iteratively runs C++ file getcontactEvents_v2a_sweep.cpp on specified input parameter values.<br\>
+runsweep3.sh iteratively runs C++ file getcontactEvents_v2a_sweep.cpp on specified input parameter values.
 
 Make sure to compile the C++ programs with proper executable file names:<br/>
 g++ -o getcev2sweep getcontactEvents_v2_sweep.cpp<br/>
