@@ -34,7 +34,8 @@ All simulation times are less than one hour on a standard laptop.
 
 ## Movement track analysis
 
-In the Jupyter notebook movement-trajectories-visualisations.ipynb the example tracks are plotted, and the waiting times are measured (Figures 1, 2 in manuscript).
+In the Jupyter notebook movement-trajectories-visualisations.ipynb the example tracks are plotted, and the waiting times are measured (Figure 1 in manuscript).<br/>
+The model selection for the waiting times (Figure 2) is done in the Jupyter notebook MLE-fits-model-selection.ipynb.<br/>
 
 ## Aggregated contact networks
 
