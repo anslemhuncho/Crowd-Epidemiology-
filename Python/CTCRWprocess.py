@@ -15,13 +15,15 @@ tracks = np.zeros((N, T, 2))
 
 ## Define powerlaw waiting time distribution
 waitingtimes = powerlaw.Power_Law(xmin=5,parameters=[1.9])
+flighttimes = powerlaw.Stretched_Exponential(xmin=0, parameters =[0.1, 0.8208926165615871])
 
 for i in range(N):
     ## Create behavioural state sequence
     stateseq = np.zeros(T)
     t = 0
     while t < T:
-        flighttime = int(np.random.exponential(10))
+        flighttime = int(flighttimes.generate_random(1)[0])
+        # int(np.random.exponential(10))
         stateseq[t:t + flighttime] = 1
         t += flighttime
         waitingtime = int(waitingtimes.generate_random(1)[0])
@@ -56,7 +58,7 @@ for i in range(len(tracks)):
     m.append(tracks[i][:,0])
     m.append(tracks[i][:,1])
 
-with open('Cpp/simtracks1000.csv', 'w') as csvfile:
+with open('/Users/philip/Documents/PhD/data-analysis/paper4/Crowd-Epidemiology-copy/Cpp/simtracks1000.csv', 'w') as csvfile:
     writer = csv.writer(csvfile)
     for row in m:
         writer.writerow(row)
